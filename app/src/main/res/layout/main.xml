@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/liPic1ImageView"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Login Image"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kodchasansemibold"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="#5A5FA4"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kodchasanregular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="An app where we strive to provide peace of mind and avoid risks of falls."
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_buttony"
+        android:fontFamily="@font/kodchasanregular"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kodchasanregular"
+        android:background="@drawable/rounded_buttonp"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>

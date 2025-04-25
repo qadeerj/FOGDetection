@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/bay"
+            android:contentDescription="Back Button"/>
+
+        <!-- Title -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:contentDescription="Back Button"
+                    android:focusable="true"
+                    android:src="@drawable/bay" />
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="User Information"
+                    android:textColor="@color/purple"
+                    android:textSize="24sp" />
+
+                <!-- Edit Button -->
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_buttonp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:padding="8dp"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <!-- Full Name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Full Name"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border"
+                    android:enabled="false"
+                    android:fontFamily="@font/kodchasanregular"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Email"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border"
+                    android:enabled="false"
+                    android:fontFamily="@font/kodchasanregular"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!-- Phone Number -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Phone Number"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border"
+                    android:enabled="false"
+                    android:fontFamily="@font/kodchasanregular"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!-- Emergency Contact -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Emergency Contact"
+                    android:textColor="@color/purple"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/emergencyContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border"
+                    android:enabled="false"
+                    android:fontFamily="@font/kodchasanregular"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!-- Save Button (Hidden Initially) -->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_buttonp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <!-- Logout Button -->
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_buttonp"
+                    android:fontFamily="@font/kodchasansemibold"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Information"
+            android:textSize="24sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="14sp"
+            android:fontFamily="@font/kodchasanregular"
+            android:textColor="@color/black"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="johndoe@example.com"
+            android:textSize="14sp"
+            android:fontFamily="@font/kodchasanregular"
+            android:textColor="@color/black"/>
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1234567890"
+            android:textSize="14sp"
+            android:fontFamily="@font/kodchasanregular"
+            android:textColor="@color/black"/>
+
+        <!-- Emergency Contact -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/emergencyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jane Doe - +1987654321"
+            android:textSize="14sp"
+            android:fontFamily="@font/kodchasanregular"
+            android:textColor="@color/black"/>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_buttonp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/bay"
+            android:contentDescription="Back Button"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Medication"
+            android:textSize="24sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Medication Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Name"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/medicationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter medication name"
+            android:fontFamily="@font/kodchasansemibold"
+            android:background="@drawable/rounded_border"
+            android:padding="12dp"/>
+
+        <!-- Dose -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dose"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/medicationDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kodchasansemibold"
+            android:hint="Enter dose (e.g., 500mg)"
+            android:background="@drawable/rounded_border"
+            android:padding="12dp"/>
+
+        <!-- Frequency -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequency"
+            android:textSize="16sp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textColor="@color/purple"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/medicationFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kodchasansemibold"
+            android:hint="Enter frequency (e.g., Twice a day)"
+            android:background="@drawable/rounded_border"
+            android:padding="12dp"/>
+
+        <!-- Save Medication Button -->
+        <Button
+            android:id="@+id/saveMedicationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Medication"
+            android:background="@drawable/rounded_buttonp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/kodchasansemibold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

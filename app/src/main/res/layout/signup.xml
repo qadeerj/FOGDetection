@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Arrow -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backArrow"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:contentDescription="Back Arrow"
+            android:focusable="true"
+            android:src="@drawable/bay" />
+
+        <!-- Signup Image -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/signupImage"
+            android:layout_width="189dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Signup Image"
+            android:scaleType="centerInside"
+            android:src="@drawable/su" />
+
+        <!-- Signup Title -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:text="Create an Account"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Full Name Input -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Email Input -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Password"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Phone Number Input -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:inputType="number"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Phone number"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Emergency Contact Section -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/kodchasansemibold"
+            android:text="Add an emergency contact"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Emergency Contact Name -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/contactNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Contact name"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Emergency Contact Phone -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emergencyPhoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:background="@drawable/rounded_border"
+            android:fontFamily="@font/kodchasanregular"
+            android:hint="Phone number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <!-- Terms and Conditions Checkbox -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/termsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/yellow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/kodchasansemibold"
+                android:text="Agree to terms and conditions"
+                android:textColor="@color/purple"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Create Account Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:background="@drawable/rounded_button_signup"
+            android:fontFamily="@font/kodchasansemibold"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- Back to Login -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/backToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/kodchasansemibold"
+            android:text="Already have an account? Log in"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
