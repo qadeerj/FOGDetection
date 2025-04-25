@@ -58,6 +58,8 @@ app/
 │   └── emergency.mp3            # 10-second emergency alert sound
 ├── assets/
 │   └── model.tflite             # TensorFlow Lite model
+|__Sample video
+    |_ sample_video.mp3
 ```
 
 ---
